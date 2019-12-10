@@ -9,7 +9,7 @@ import Department from './Department';
 import Doctors from './Doctors';
 export default ()=>
 <React.Fragment>
-
+<div class="position-fixed d-flex flex-column w-100" style={{zIndex:1}}>
 < div className='container-fluid bg-transparent d-flex justify-content-end p-0 '>
 <div className="btn-group">
 <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#bookappointment">
@@ -20,7 +20,6 @@ export default ()=>
 </button>
 </ div>
 </div>
-<div class="position-fixed w-100" style={{zIndex:10}}>
 <Navbar />
 </div>
 <BookMyAppointment />

@@ -32,7 +32,7 @@ export default ()=>
 <React.Fragment>
       
    <section id="service">
-<div class="py-5" style={{backgroundColor:'#A569BD',opacity:1,minHeight:100+'vh'}} >
+<div class="py-5" style={{backgroundColor:'#00796B ',opacity:1,minHeight:100+'vh'}} >
     <div class="h1 text-center text-white mt-5">Our Best Services</div>
   <div class="row mx-auto w-75 pb-5">
   {services.map((item)=>

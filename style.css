@@ -11,3 +11,11 @@ background-color: #e63f91;
 .nav-item:hover{
   border-bottom:3px solid black;
 }
+#newpatient input:checked~#oldpatient{
+display: none;
+}
+.prf-img{
+  height:30px;
+  width:30px;
+  border-radius: 50%;
+}

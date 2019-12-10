@@ -55,8 +55,8 @@ export default () =>
 <React.Fragment>
       
    <section id="docter">
-  <div class="py-5" style={{backgroundColor:'#A569BD',opacity:.9}} >
-    <div class="h1 text-center text-white mt-5">Professional Docters</div>
+  <div class="py-5" style={{backgroundColor:'#D81B60   ',opacity:.9}} >
+    <div class="h1 text-center text-white mt-5">Professional Doctors</div>
   <div class="row mx-auto w-75 pb-5">
   {doctor.map((item)=>
     <div class="col-sm-12 col-md-6 col-lg-4 mx-5 mt-5" style={{maxWidth:15+'rem'}} >
