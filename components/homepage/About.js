@@ -21,7 +21,7 @@ export default ()=>
 </ul>
 <div class="tab-content" id="pills-tabContent">
   <div class="tab-pane fade show active" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
-<div class="row justify-content-between pl-5 pr-5">
+<div class="row justify-content-between p-5">
 <div class=" col-sm-12 col-md-6">
   <img src="https://www.biospectrumindia.com/uploads/articles/hospital-13551.jpg" class="img-fluid img-thumbnail" />
 </div>
@@ -34,7 +34,7 @@ export default ()=>
 </div>
   </div>
   <div class="tab-pane fade" id="pills-vision" role="tabpanel" aria-labelledby="pills-vision-tab">
-    <div class="row justify-content-between pl-5 pr-5">
+    <div class="row justify-content-between p-5 ">
 <div class=" col-sm-12 col-md-6">
   <img src="https://www.biospectrumindia.com/uploads/articles/hospital-13551.jpg" class="img-fluid img-thumbnail" />
 </div>
@@ -48,8 +48,8 @@ export default ()=>
   </div>
   
   <div class="tab-pane fade" id="pills-offer" role="tabpanel" aria-labelledby="pills-offer-tab">
-     <div class="row justify-content-between pl-5 pr-5">
-<div class=" col-sm-12 col-md-6">
+     <div class="row justify-content-between">
+<div class=" col-sm-12 col-md-6 p-5">
   <img src="https://www.biospectrumindia.com/uploads/articles/hospital-13551.jpg" class="img-fluid img-thumbnail" />
 </div>
 <div class="col-sm-12 col-md-6">

@@ -34,10 +34,10 @@ export default ()=>
    <section id="service">
 <div class="py-3" style={{backgroundColor:'#00796B ',opacity:1,minHeight:100+'vh'}} >
     <div class="h1 text-center text-white mt-5">Our Best Services</div>
-  <div class="row mx-auto w-75 pb-5">
+  <div class="row px-5 pb-5">
   {services.map((item)=>
-    <div class="col-sm-12 col-md-6 col-lg-4 mx-3 mt-5" style={{maxWidth:18+'rem'}}>
-       <div class="card border-0">
+    <div class="col-sm-12 col-md-6 col-lg-4" style={{minWidth:300+'px'}}>
+       <div class="card border-0 mt-5 mx-auto">
          <div class="card-body text-center p-0 pt-3">
            <img src={item.icon} class="img-thumbnail mb-2" style={{height:10.25+'rem',width:10.25+'rem',borderRadius:50+'%'}}/>   
             <div class=" p-2 "><b>{item.name}</b></div>

@@ -20,7 +20,7 @@ const navitems=[{
   name:'Services'
 },
 {
-  link:'Contact',
+  link:'contact',
   name:'Contact'
 }
 ];

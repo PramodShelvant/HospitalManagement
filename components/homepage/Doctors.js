@@ -55,12 +55,12 @@ export default () =>
 <React.Fragment>
       
    <section id="docter">
-  <div class="py-5" style={{backgroundColor:'#00796B',opacity:1}} >
-    <div class="h1 text-center text-white mt-5">Professional Doctors</div>
-  <div class="row mx-auto w-75 pb-5">
+  <div class="" style={{backgroundColor:'#00796B',opacity:1}} >
+    <div class="h1 text-center text-white mt-5 pt-5">Professional Doctors</div>
+  <div class="row mx-auto px-5 pb-5">
   {doctor.map((item)=>
-    <div class="col-sm-12 col-md-6 col-lg-4 mx-5 mt-5" style={{maxWidth:15+'rem'}} >
-       <div class="card border-0">
+   <div class="col-sm-12 col-md-6 col-lg-4 " style={{minWidth:300+'px'}} >
+       <div class="card border-0 mt-5 mx-auto" >
          <div class="card-body text-center p-0 pt-3">
            <img src={item.Profileimg} class="img-thumbnail mb-2" style={{height:6.25+'rem',width:6.25+'rem',borderRadius:50+'%'}}/>
             <div class="h5 text-danger mb-1" style={{fontSize:1.5+'rem'}}>{item.name}</div>
