@@ -55,18 +55,18 @@ export default () =>
 <React.Fragment>
       
    <section id="docter">
-  <div class="py-5" style={{backgroundColor:'#D81B60   ',opacity:.9}} >
+  <div class="py-5" style={{backgroundColor:'#00796B',opacity:1}} >
     <div class="h1 text-center text-white mt-5">Professional Doctors</div>
   <div class="row mx-auto w-75 pb-5">
   {doctor.map((item)=>
     <div class="col-sm-12 col-md-6 col-lg-4 mx-5 mt-5" style={{maxWidth:15+'rem'}} >
-       <div class="card">
+       <div class="card border-0">
          <div class="card-body text-center p-0 pt-3">
            <img src={item.Profileimg} class="img-thumbnail mb-2" style={{height:6.25+'rem',width:6.25+'rem',borderRadius:50+'%'}}/>
-            <div class="h5 text-danger mb-1" >{item.name}</div>
-            <i class="d-block mb-1">{item.email}</i>
-            <i class="d-block mb-1">{item.mobno}</i>
-            <div class="specialization p-2"><img class="img-fluid mr-2" src={item.specializationimg} style={{height:30+'px',width:30+'px',borderRadius:50+'%'}}/>{item.specialization}</div>
+            <div class="h5 text-danger mb-1" style={{fontSize:1.5+'rem'}}>{item.name}</div>
+            <span class="d-block mb-1 " style={{fontSize:1.25+'rem'}}>{item.email}</span>
+            <span class="d-block mb-1 " style={{fontSize:1+'rem'}}>{item.mobno}</span>
+            <div class="p-2 bg-primary mt-3 text-white font-weight-bold" ><img class="img-fluid mr-2" src={item.specializationimg} style={{height:30+'px',width:30+'px',borderRadius:50+'%'}}/>{item.specialization}</div>
          </div>  
        </div>
     </div>

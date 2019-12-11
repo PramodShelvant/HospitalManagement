@@ -32,15 +32,18 @@ export default ()=>
 <React.Fragment>
       
    <section id="service">
-<div class="py-5" style={{backgroundColor:'#00796B ',opacity:1,minHeight:100+'vh'}} >
+<div class="py-3" style={{backgroundColor:'#00796B ',opacity:1,minHeight:100+'vh'}} >
     <div class="h1 text-center text-white mt-5">Our Best Services</div>
   <div class="row mx-auto w-75 pb-5">
   {services.map((item)=>
-    <div class="col-sm-12 col-md-6 col-lg-4 mx-5 mt-5" style={{maxWidth:15+'rem'}}>
-       <div class="card">
+    <div class="col-sm-12 col-md-6 col-lg-4 mx-3 mt-5" style={{maxWidth:18+'rem'}}>
+       <div class="card border-0">
          <div class="card-body text-center p-0 pt-3">
-           <img src={item.icon} class="img-thumbnail mb-2" style={{height:6.25+'rem',width:6.25+'rem',borderRadius:50+'%'}}/>   
-            <div class="specialization p-2"><b>{item.name}</b></div>
+           <img src={item.icon} class="img-thumbnail mb-2" style={{height:10.25+'rem',width:10.25+'rem',borderRadius:50+'%'}}/>   
+            <div class=" p-2 "><b>{item.name}</b></div>
+            <div class="text-justify p-3">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+            </div>
          </div>  
        </div>
     </div>
