@@ -30,7 +30,7 @@ export default () =>
   <div class="input-group-prepend">
     <span class="input-group-text bg-white" id="addon-wrapping"><i className='fa fa-mobile'></i></span>
   </div>
-    <input type="password" className="form-control border-left-0 px-0" id="mobileno" placeholder="MobileNo" />
+    <input type="text" className="form-control border-left-0 px-0" id="mobileno" placeholder="MobileNo" />
     </div>
   </div>
   <div className="form-group">
