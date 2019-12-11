@@ -13,7 +13,7 @@ import Footer from './footer';
 export default ()=>
 <React.Fragment>
 <div class="position-fixed d-flex flex-column w-100" style={{zIndex:1}}>
-< div className='pr-5 d-flex justify-content-between p-0 ' style={{backgroundColor:'#dfdfdf'}}>
+< div className='pr-5 d-flex justify-content-between bg-dark text-white p-0 ' style={{backgroundColor:'#dfdfdf'}}>
 <div className='d-flex align-items-center'>
    <div className='px-4'><i className='fa fa-mobile mx-1'></i>8960683822</div>
    <div className='px-4'><i className='fa fa-envelope-o mx-1'></i>email@gmail.com</div>
