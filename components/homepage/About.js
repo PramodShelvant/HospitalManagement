@@ -21,12 +21,12 @@ export default ()=>
 </ul>
 <div className="tab-content" id="pills-tabContent">
   <div className="tab-pane fade show active" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
-<div className="row justify-content-between">
+<div className="row justify-content-between px-5">
 <div className=" col-sm-12 col-md-6">
   <img src="https://www.biospectrumindia.com/uploads/articles/hospital-13551.jpg" className="img-fluid img-thumbnail" />
 </div>
 <div className="col-sm-12 col-md-6 p-0 m-0 ">
-  <p className="text-justify lead p-0 px-3" >
+  <p className="text-justify  p-0 " >
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."</p>
    
     <button className="btn btn-outline-success btn-sm">More Information</button>
@@ -34,12 +34,12 @@ export default ()=>
 </div>
   </div>
   <div className="tab-pane fade" id="pills-vision" role="tabpanel" aria-labelledby="pills-vision-tab">
-    <div className="row justify-content-between">
+    <div className="row justify-content-between px-5">
 <div className=" col-sm-12 col-md-6">
   <img src="https://www.biospectrumindia.com/uploads/articles/hospital-13551.jpg" className="img-fluid img-thumbnail" />
 </div>
 <div className="col-sm-12 col-md-6 p-0 m-0">
-  <p className="text-justify lead px-3" >
+  <p className="text-justify lead " >
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."</p>
     
     <button className="btn btn-outline-success btn-sm">More Information</button>
@@ -48,12 +48,12 @@ export default ()=>
   </div>
   
   <div className="tab-pane fade" id="pills-offer" role="tabpanel" aria-labelledby="pills-offer-tab">
-     <div className="row justify-content-between">
+     <div className="row justify-content-between px-5">
 <div className=" col-sm-12 col-md-6">
   <img src="https://www.biospectrumindia.com/uploads/articles/hospital-13551.jpg" className="img-fluid img-thumbnail" />
 </div>
 <div className="col-sm-12 col-md-6 p-0 m-0">
-  <p className="text-justify lead px-3" >
+  <p className="text-justify" >
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."</p>
    
     <button className="btn btn-outline-success btn-sm">More Information</button>
@@ -62,12 +62,12 @@ export default ()=>
   </div>
 
    <div className="tab-pane fade" id="pills-work" role="tabpanel" aria-labelledby="pills-work-tab">
-     <div className="row justify-content-between ">
+     <div className="row justify-content-between px-5 ">
 <div className=" col-sm-12 col-md-6">
   <img src="https://www.biospectrumindia.com/uploads/articles/hospital-13551.jpg" className="img-fluid img-thumbnail" />
 </div>
 <div className="col-sm-12 col-md-6 p-0 m-0">
-  <p className="text-justify lead px-3" >
+  <p className="text-justify " >
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."</p>
     
     <button className="btn btn-outline-success btn-sm">More Information</button>
