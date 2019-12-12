@@ -56,11 +56,11 @@ export default () =>
    <div id="docter" className='container-fluid ' style={{backgroundColor:'#00796B',paddingTop:90+'px'}}>
    <div className='container'>
     <div className="h1 text-center text-white pb-5">Professional Doctors</div>
-  <div className="row pl-5">
+  <div className="row pl-md-5 ">
   {doctor.map((item)=>
-   <div className="col-sm-12 col-md-6 col-lg-4 p-0 m-0 pb-5" >
-       <div className="card border-0" style={{maxWidth:20+'rem'}}>
-         <div className="card-body text-center">
+   <div className="col-sm-12 col-md-6 col-lg-4  pb-5" >
+       <div className="card border-0  " style={{maxWidth:18+'rem'}}>
+         <div className="card-body text-center ">
            <img src={item.Profileimg} className="img-thumbnail mb-2" style={{height:6.25+'rem',width:6.25+'rem',borderRadius:50+'%'}}/>
             <div className="h5 text-danger mb-1" style={{fontSize:1.5+'rem'}}>{item.name}</div>
             <span className="d-block mb-1 " style={{fontSize:1.25+'rem'}}>{item.email}</span>

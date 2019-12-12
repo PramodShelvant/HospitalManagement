@@ -56,7 +56,7 @@ const departments= [
 <div class="bg-white container pb-5" style={{paddingTop:90+'px'}}  id="department">
  <div class="h1 text-center pb-4">Our Departments</div>
   
- <div class="row justify-content-end ">
+ <div class="row pl-md-5">
  {departments.map((item)=>
   <div class="col-sm-12 col-md-6 col-lg-4 h4 m-0 p-0" style={{minWidth:300+'px'}}><img class="img-fluid m-3" src={item.icon} style={{height:50+'px',width:50+'px',borderRadius:50+'%'}}/>{item.name.toUpperCase()}</div>)}
  </div>

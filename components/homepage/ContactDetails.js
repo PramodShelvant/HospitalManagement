@@ -1,6 +1,7 @@
 import React from 'react';
 export default () =>
 <React.Fragment>
+<div className='d-flex flex-column align-items-start'>
 <ul className='list-group pt-4'>
 <li className='list-group-item border-0'>
 <div className='h5'><i className='fa fa-map-marker mr-3'></i>Hospital Address</div>
@@ -19,12 +20,14 @@ export default () =>
         <li className='list-group-item border-0 py-1 mx-3'>email@gmail.com</li>
 </li>
 </ul>
-<div className='h3 py-3 mx-5'>Follow Us On </div>
-<div className='mr-7 py-3 mx-5'>
-<i className='fa fa-google mr-4'></i>
-<i className='fa fa-twitter mr-4'></i>
-<i className='fa fa-facebook-square mr-4'></i>
-<i className='fa fa-instagram mr-4'></i>
+<div>
+<div className='h3 py-3 m-0 p-0 mx-5'>Follow Us On </div>
+<div className=' py-3 mx-5 btn-group'>
+<i className='fa fa-google mr-4 btn btn-danger'></i>
+<i className='fa fa-twitter mr-4 btn bg-warning'></i>
+<i className='fa fa-facebook mr-4 btn btn-primary'></i>
+<i className='fa fa-instagram mr-4 btn btn-danger'></i>
 </div>
-
+</div>
+</div>
 </React.Fragment>
