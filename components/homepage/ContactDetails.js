@@ -20,11 +20,11 @@ export default () =>
 </li>
 </ul>
 <div className='h3 py-3 mx-5'>Follow Us On </div>
-<div className='mr-7'>
-<i className='fa fa-google mr-3'></i>
-<i className='fa fa-twitter mr-3'></i>
-<i className='fa fa-facebook mr-3'></i>
-<i className='fa fa-instagram mr-3'></i>
+<div className='mr-7 py-3 mx-5'>
+<i className='fa fa-google mr-4'></i>
+<i className='fa fa-twitter mr-4'></i>
+<i className='fa fa-facebook-square mr-4'></i>
+<i className='fa fa-instagram mr-4'></i>
 </div>
 
 </React.Fragment>

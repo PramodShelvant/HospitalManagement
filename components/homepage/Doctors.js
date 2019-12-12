@@ -53,25 +53,24 @@ const doctor=[
 ]
 export default () =>
 <React.Fragment>
-      
-   <section id="docter">
-  <div class="" style={{backgroundColor:'#00796B',opacity:1}} >
-    <div class="h1 text-center text-white mt-5 pt-5">Professional Doctors</div>
-  <div class="row mx-auto px-5 pb-5">
+   <div id="docter" className='container-fluid ' style={{backgroundColor:'#00796B',paddingTop:90+'px'}}>
+   <div className='container'>
+    <div className="h1 text-center text-white pb-5">Professional Doctors</div>
+  <div className="row pl-5">
   {doctor.map((item)=>
-   <div class="col-sm-12 col-md-6 col-lg-4 " style={{minWidth:300+'px'}} >
-       <div class="card border-0 mt-5 mx-auto" >
-         <div class="card-body text-center p-0 pt-3">
-           <img src={item.Profileimg} class="img-thumbnail mb-2" style={{height:6.25+'rem',width:6.25+'rem',borderRadius:50+'%'}}/>
-            <div class="h5 text-danger mb-1" style={{fontSize:1.5+'rem'}}>{item.name}</div>
-            <span class="d-block mb-1 " style={{fontSize:1.25+'rem'}}>{item.email}</span>
-            <span class="d-block mb-1 " style={{fontSize:1+'rem'}}>{item.mobno}</span>
-            <div class="p-2 bg-primary mt-3 text-white font-weight-bold" ><img class="img-fluid mr-2" src={item.specializationimg} style={{height:30+'px',width:30+'px',borderRadius:50+'%'}}/>{item.specialization}</div>
+   <div className="col-sm-12 col-md-6 col-lg-4 p-0 m-0 pb-5" >
+       <div className="card border-0" style={{maxWidth:20+'rem'}}>
+         <div className="card-body text-center">
+           <img src={item.Profileimg} className="img-thumbnail mb-2" style={{height:6.25+'rem',width:6.25+'rem',borderRadius:50+'%'}}/>
+            <div className="h5 text-danger mb-1" style={{fontSize:1.5+'rem'}}>{item.name}</div>
+            <span className="d-block mb-1 " style={{fontSize:1.25+'rem'}}>{item.email}</span>
+            <span className="d-block mb-1 " style={{fontSize:1+'rem'}}>{item.mobno}</span>
+            <div className="p-2 bg-primary mt-3 text-white font-weight-bold" ><img className="img-fluid mr-2" src={item.specializationimg} style={{height:30+'px',width:30+'px',borderRadius:50+'%'}}/>{item.specialization}</div>
          </div>  
        </div>
     </div>
     )}
   </div>
 </div>
-</section>
+</div>
 </React.Fragment>

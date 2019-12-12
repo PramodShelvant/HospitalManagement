@@ -53,13 +53,13 @@ const departments= [
  ];
  export default ()=>
 <React.Fragment>
-<div class="bg-white pt-5" style={{opacity:.9}} id="department">
- <div class="h1 text-center p-5">Our Departments</div>
-  <div class="ml-5">
- <div class="row ml-5">
+<div class="bg-white container pb-5" style={{paddingTop:90+'px'}}  id="department">
+ <div class="h1 text-center pb-4">Our Departments</div>
+  
+ <div class="row justify-content-end ">
  {departments.map((item)=>
-  <div class="col-sm-12 col-md-6 col-lg-4 h4 p-1" style={{minWidth:300+'px'}}><img class="img-fluid m-3" src={item.icon} style={{height:50+'px',width:50+'px',borderRadius:50+'%'}}/>{item.name.toUpperCase()}</div>)}
+  <div class="col-sm-12 col-md-6 col-lg-4 h4 m-0 p-0" style={{minWidth:300+'px'}}><img class="img-fluid m-3" src={item.icon} style={{height:50+'px',width:50+'px',borderRadius:50+'%'}}/>{item.name.toUpperCase()}</div>)}
  </div>
  </div>
- </div> 
+ 
 </React.Fragment>

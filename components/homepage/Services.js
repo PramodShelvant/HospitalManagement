@@ -31,17 +31,18 @@ const services=[{
 export default ()=>
 <React.Fragment>
       
-   <section id="service">
-<div class="py-3" style={{backgroundColor:'#00796B ',opacity:1,minHeight:100+'vh'}} >
-    <div class="h1 text-center text-white mt-5">Our Best Services</div>
-  <div class="row px-5 pb-5">
+   <section id="service" style={{backgroundColor:'#00796B ',paddingTop:90+'px'}}>
+   
+<div className="container"  >
+    <div className="h1 text-center text-white pb-5" >Our Best Services</div>
+  <div className="row pl-5">
   {services.map((item)=>
-    <div class="col-sm-12 col-md-6 col-lg-4" style={{minWidth:300+'px'}}>
-       <div class="card border-0 mt-5 mx-auto">
-         <div class="card-body text-center p-0 pt-3">
-           <img src={item.icon} class="img-thumbnail mb-2" style={{height:10.25+'rem',width:10.25+'rem',borderRadius:50+'%'}}/>   
-            <div class=" p-2 "><b>{item.name}</b></div>
-            <div class="text-justify p-3">
+    <div className="col-sm-12 col-md-6 col-lg-4 p-0 m-0 pb-5" >
+       <div className="card border-0" style={{maxWidth:20+'rem'}}>
+         <div className="card-body text-center p-0 pt-3">
+           <img src={item.icon} className="img-thumbnail mb-2" style={{height:10.25+'rem',width:10.25+'rem',borderRadius:50+'%'}}/>   
+            <div className=" p-2 "><b>{item.name}</b></div>
+            <div className="text-justify p-3">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
             </div>
          </div>  
