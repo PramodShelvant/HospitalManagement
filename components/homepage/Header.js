@@ -12,30 +12,29 @@ import Footer from './footer';
 
 export default ()=>
 <React.Fragment>
-<div class="position-fixed d-flex flex-column w-100" style={{zIndex:1}}>
+<div class="position-fixed d-flex flex-column vw-100 bg-dark p-0 m-0" style={{zIndex:1,minWidth:100+'vw'}}>
 {
 //   < div className='pr-5 d-flex justify-content-between bg-dark text-white p-0 ' style={{backgroundColor:'#dfdfdf'}}>
 // <div className='d-flex align-items-center'>
 //    <div className='px-4'><i className='fa fa-mobile mx-1'></i>8960683822</div>
 //    <div className='px-4'><i className='fa fa-envelope-o mx-1'></i>email@gmail.com</div>
 // </div>
-// <div>
-// <button type="button" className="btn btn-primary mx-4 " data-toggle="modal" data-target="#bookappointment">
-//  Book Appointment
-// </button>
-// <button type="button" className="btn btn-primary mx-4" data-toggle="modal" data-target="#login">
-//  Login
-// </button>
-// </div>
-
-// </div>
 }
+<div className='d-flex w-25 ml-auto justify-content-around'>
+<button type="button" className="btn btn-primary btn-sm" data-toggle="modal" data-target="#bookappointment">
+ Book Appointment </button>
+<button type="button" className="btn btn-primary btn-sm" data-toggle="modal" data-target="#login">
+ Login
+</button>
+</div>
+
+
 <Navbar />
 </div>
 <BookMyAppointment />
 <Login />
 <Carosal />
-<About/>
+<About />
 <Services />
 <Department />
 <Doctors />

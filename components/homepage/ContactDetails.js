@@ -1,7 +1,7 @@
 import React from 'react';
 export default () =>
 <React.Fragment>
-<div className='d-flex flex-column align-items-start'>
+<div className='d-flex flex-column align-items-start pl-md-5'>
 <ul className='list-group pt-4'>
 <li className='list-group-item border-0'>
 <div className='h5'><i className='fa fa-map-marker mr-3'></i>Hospital Address</div>

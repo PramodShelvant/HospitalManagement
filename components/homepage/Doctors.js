@@ -56,7 +56,7 @@ export default () =>
    <div id="docter" className='container-fluid ' style={{backgroundColor:'#00796B',paddingTop:90+'px'}}>
    <div className='container'>
     <div className="h1 text-center text-white pb-5">Professional Doctors</div>
-  <div className="row pl-md-5 ">
+  <div className="row pl-1 pl-md-5 ">
   {doctor.map((item)=>
    <div className="col-sm-12 col-md-6 col-lg-4  pb-5" >
        <div className="card border-0  " style={{maxWidth:18+'rem'}}>
