@@ -21,9 +21,9 @@ export default ()=>
 // </div>
 }
 <div className='container d-md-flex  ml-auto justify-content-end'>
-<button type="button" className="btn btn-primary btn-sm mr-2" data-toggle="modal" data-target="#bookappointment">
+<button type="button" className="btn btn-outline-light btn-sm mr-2 " data-toggle="modal" data-target="#bookappointment">
  Book Appointment </button>
-<button type="button" className="btn btn-primary btn-sm " data-toggle="modal" data-target="#login">
+<button type="button" className="btn btn-outline-light btn-sm " data-toggle="modal" data-target="#login">
  Login
 </button>
 </div>
