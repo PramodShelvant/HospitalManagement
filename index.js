@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import Header from './components/homepage/Header';
-import Dashboard from'./components/Dashboard/Dashboard';
+import Dashboard from'./components/Patient/dashboard';
 import './style.css';
 
 
