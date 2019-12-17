@@ -47,12 +47,14 @@ export default (prop) =>
 <React.Fragment>
 
 
-<div className='bg-primary align-items-streach' style={{minHeight:'100vh !important'}}>
-               <div className='bg-primary' style={{minHeight:'100vh !important'}}>
+<div className=' navbar-expand-sm d-flex flex-row bg-primary align-items-streach' style={{minHeight:'100vh !important'}}>
+               <div class="collapse navbar-collapse" id="navbarNav">
+               <div>
                <Myprofilecard hide={prop.hide} />
                {sideitems.map((item,index)=>
                             <a key={index} className='d-block p-2 px-3 border-top border-right list-group-item-action bg-primary text-white' ><i className={'mr-1'+' '+item.icon} ></i><span  style={{display:(!prop.hide)?'inline-block':'none'}}>{item.name}</span>
                             </a>)}               
-                    </div >    
+                    </div >  
+                    </div>  
     </div>                                       
 </React.Fragment>
