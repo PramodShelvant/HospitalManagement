@@ -4,7 +4,16 @@ const sideitems=[
   
   {
     icon:'fa fa-calendar',
-    name:'My Appointment'
+    name:'My Appointment',
+    submenu:[
+       {
+    icon:'fa fa-stethoscope',
+    name:'OPD'
+  }, {
+    icon:'fa fa-stethoscope',
+    name:'OPD'
+  }
+    ]
   },
    {
     icon:'fa fa-stethoscope',
@@ -49,11 +58,24 @@ export default (prop) =>
 
 <div className=' navbar-expand-sm d-flex flex-row bg-primary align-items-streach' style={{minHeight:'100vh !important'}}>
                <div class="collapse navbar-collapse" id="navbarNav">
-               <div>
+               <div className='accordion' id="accordionExample">
                <Myprofilecard hide={prop.hide} />
                {sideitems.map((item,index)=>
-                            <a key={index} className='d-block p-2 px-3 border-top border-right list-group-item-action bg-primary text-white' ><i className={'mr-1'+' '+item.icon} ></i><span  style={{display:(!prop.hide)?'inline-block':'none'}}>{item.name}</span>
-                            </a>)}               
+               <React.Fragment>
+                            <a key={index} href={'.'+item.name} className={'d-block p-2 px-3 border-top border-right list-group-item-action bg-primary text-white'} ><i className={'mr-1'+' '+item.icon} ></i><span  style={{display:(!prop.hide)?'inline-block':'none'}}>{item.name}</span>
+                            </a>
+                           {(item.submenu)? item.submenu.map((submenu,index)=><a key={index} className={'d-block p-2 px-3 border-top border-right list-group-item-action bg-primary text-white collapse '+item.name} ><i className={'mr-1'+' '+item.icon} ></i><span  style={{display:(!prop.hide)?'inline-block':'none'}} data-parent="#accordionExample">{item.name}</span>
+                            </a>):''}
+
+                   </React.Fragment>         
+                            
+                            )
+                            
+                            
+                            
+                            
+                            
+                            }               
                     </div >  
                     </div>  
     </div>                                       

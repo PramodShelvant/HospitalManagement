@@ -1,7 +1,7 @@
 import React from 'react';
 export default (prop) =>
 <React.Fragment>
-<nav className="d-flex navbar-expand-sm navbar-light bg-light justify-content-between p-0 flex-nowrap">
+<nav className="d-flex navbar-expand-sm navbar-light bg-light justify-content-between p-0 flex-nowrap w-100">
  <button class="navbar-toggler border-0 text-primary" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={()=>{prop.setHide(0)}}>
     <span className="fa fa-bars"></span>
   </button>
