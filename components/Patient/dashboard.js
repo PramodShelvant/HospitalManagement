@@ -8,7 +8,7 @@ export default () =>{
 return(<React.Fragment>
 <Navbar hide={hide} setHide={setHide}/>
 <div className='d-flex'>
-<Sidebar />
+<Sidebar hide={hide}/>
 <div className='flex-grow-1 m-5'>
 
 <Sidecontent />

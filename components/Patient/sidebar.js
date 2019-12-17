@@ -43,14 +43,16 @@ const sideitems=[
 
 ];
 
-export default () =>
+export default (prop) =>
 <React.Fragment>
-<div>
 
-<Myprofilecard />
-               <div class=''>{sideitems.map((item)=>
-                            <a className='d-block p-2 px-3 border-bottom border-right list-group-item-action' ><i className={'mr-1'+' '+item.icon} ></i><span className='mycollapse'>{item.name}</span>
+
+
+               <div style={{height:'100vh'}}>
+               <Myprofilecard hide={prop.hide} />
+               {sideitems.map((item)=>
+                            <a className='d-block p-2 px-3 border-top border-right list-group-item-action bg-primary text-white' ><i className={'mr-1'+' '+item.icon} ></i><span  style={{display:(!prop.hide)?'inline-block':'none'}}>{item.name}</span>
                             </a>)}               
                     </div >    
-                    </div>                         
+                                           
 </React.Fragment>
