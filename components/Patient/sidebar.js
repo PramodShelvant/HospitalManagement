@@ -47,12 +47,12 @@ export default (prop) =>
 <React.Fragment>
 
 
-
-               <div style={{height:'100vh'}}>
+<div className='bg-primary align-items-streach' style={{minHeight:'100vh !important'}}>
+               <div className='bg-primary' style={{minHeight:'100vh !important'}}>
                <Myprofilecard hide={prop.hide} />
-               {sideitems.map((item)=>
-                            <a className='d-block p-2 px-3 border-top border-right list-group-item-action bg-primary text-white' ><i className={'mr-1'+' '+item.icon} ></i><span  style={{display:(!prop.hide)?'inline-block':'none'}}>{item.name}</span>
+               {sideitems.map((item,index)=>
+                            <a key={index} className='d-block p-2 px-3 border-top border-right list-group-item-action bg-primary text-white' ><i className={'mr-1'+' '+item.icon} ></i><span  style={{display:(!prop.hide)?'inline-block':'none'}}>{item.name}</span>
                             </a>)}               
                     </div >    
-                                           
+    </div>                                       
 </React.Fragment>
