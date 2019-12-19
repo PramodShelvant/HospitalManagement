@@ -30,6 +30,12 @@ class App extends Component {
       render={()=>
       <Dashboard items={Receptionist} />}
 />
+<Route
+      path='/homepage'
+      render={()=>
+      <Header items={Header} />}
+/>
+
       </BrowserRouter>
     );
   }
