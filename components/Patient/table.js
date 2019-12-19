@@ -3,12 +3,12 @@ import React,{useEffect} from 'react'
 export default (prop)=>{
  useEffect(()=>{  $(document).ready(function () {
             $('#table1').DataTable({
-               dom: 'Bfrtip',
+              lengthChange: false,
+              
         buttons: [
-            'copy', 'csv', 'excel', 'pdf', 'print'
+            'copy', 'csv', 'excel', { "extend": 'pdf', "text":'pdf',"className": 'btn btn-primary btn-xs' }, 'print'
         ]
- }).buttons().container()
-        .appendTo( '#table1_filter float-right' );})},[]);
+ });})},[]);
   return(
 
 <>
