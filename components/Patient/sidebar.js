@@ -58,14 +58,21 @@ export default (prop) =>
 
 <div className=' navbar-expand-sm d-flex flex-row bg-primary align-items-streach' style={{minHeight:'100vh !important'}}>
                <div class="collapse navbar-collapse" id="navbarNav">
-               <div className='accordion' id="accordionExample">
+               <div>
                <Myprofilecard hide={prop.hide} />
+               <div className='accordion' id="accordionExample">
                {sideitems.map((item,index)=>
                <React.Fragment>
-                            <a key={index} href={'.'+item.name} className={'d-block p-2 px-3 border-top border-right list-group-item-action bg-primary text-white'} ><i className={'mr-1'+' '+item.icon} ></i><span  style={{display:(!prop.hide)?'inline-block':'none'}}>{item.name}</span>
+                            <a key={index} href={'#'+item.name.replace(' ','')} data-toggle='collapse' className={'d-block p-2 px-3 border-top border-right list-group-item-action bg-primary text-white'} ><i className={'mr-1'+' '+item.icon} ></i><span  style={{display:(!prop.hide)?'inline-block':'none'}}>{item.name}</span>
                             </a>
-                           {(item.submenu)? item.submenu.map((submenu,index)=><a key={index} className={'d-block p-2 px-3 border-top border-right list-group-item-action bg-primary text-white collapse '+item.name} ><i className={'mr-1'+' '+item.icon} ></i><span  style={{display:(!prop.hide)?'inline-block':'none'}} data-parent="#accordionExample">{item.name}</span>
-                            </a>):''}
+                           
+                           {(item.submenu)? <div data-parent="#accordionExample" className='collapse' id={item.name.replace(' ','')}>{item.submenu.map((submenu,index)=><a key={index}  href={'#'+submenu.name.replace(' ','')} data-toggle='collapse' className={'d-block p-2 px-3 border-top border-right list-group-item-action bg-dark text-white collapse '+item.name} ><i className={'mr-1'+' '+item.icon} ></i><span  style={{display:(!prop.hide)?'inline-block':'none'}} >{item.name}</span>
+                            </a>)}
+                            {(item.submenu.submenu)? <div data-parent="#accordionExample" className='collapse' id={submenu.name.replace(' ','')}>{item.submenu.submenu.map((submenu,index)=><a key={index} className={'d-block p-2 px-3 border-top border-right list-group-item-action bg-dark text-white collapse '+item.name} ><i className={'mr-1'+' '+item.icon} ></i><span  style={{display:(!prop.hide)?'inline-block':'none'}} >{item.name}</span>
+                            </a>)}</div>:''}
+                            
+                            </div>:''}
+                            
 
                    </React.Fragment>         
                             
@@ -78,5 +85,6 @@ export default (prop) =>
                             }               
                     </div >  
                     </div>  
+                    </div>
     </div>                                       
 </React.Fragment>
