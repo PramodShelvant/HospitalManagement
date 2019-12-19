@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import Hello from './Hello';
 import Header from './components/homepage/Header';
 import Dashboard from'./components/Patient/dashboard';
+import {Receptionist,patient} from './components/Patient/data.js';
 import './style.css';
 
 
@@ -15,10 +17,20 @@ class App extends Component {
   }
 
   render() {
+   // alert(Receptionist)
     return (
-      <React.Fragment>
-        <Dashboard />
-      </React.Fragment>
+      <BrowserRouter>
+      <Route
+      path='/patient'
+      render={()=>
+      <Dashboard items={patient} />}
+/>
+<Route
+      path='/Receptionist'
+      render={()=>
+      <Dashboard items={Receptionist} />}
+/>
+      </BrowserRouter>
     );
   }
 }

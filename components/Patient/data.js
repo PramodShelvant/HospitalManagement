@@ -1,4 +1,9 @@
-const Receptionist=[
+
+
+
+
+import React from 'react'
+export const Receptionist=[
   {
     icon:'fa fa-user-o',
     name:'Receptionist',
@@ -55,10 +60,10 @@ const Receptionist=[
   }
 
 ];
-const patient=[
+export const patient=[
   {
     icon:'fa fa-user-o',
-    name:'Receptionist',
+    name:'My Appointment',
   },
    {
     icon:'fa fa-stethoscope',
