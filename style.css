@@ -1,3 +1,6 @@
 .logowrapper,.my{
   transition:.5s
 }
+.dataTables_filter {
+   display: inline-block !important;
+}

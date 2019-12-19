@@ -3,8 +3,8 @@ import React,{useEffect} from 'react'
 export default (prop)=>{
  useEffect(()=>{  $(document).ready(function () {
             $('#table1').DataTable({
-              lengthChange: false,
               
+               dom:  '<"top"i>rt<"bottom"flp><"clear">',
         buttons: [
             'copy', 'csv', 'excel', { "extend": 'pdf', "text":'pdf',"className": 'btn btn-primary btn-xs' }, 'print'
         ]
