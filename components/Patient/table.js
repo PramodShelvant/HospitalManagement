@@ -4,9 +4,9 @@ export default (prop)=>{
  useEffect(()=>{  $(document).ready(function () {
             $('#table1').DataTable({
               
-               dom:  '<"top"i>rt<"bottom"flp><"clear">',
+               dom:  '<"col-sm-12"B><"col-sm-12"f>t',
         buttons: [
-            'copy', 'csv', 'excel', { "extend": 'pdf', "text":'pdf',"className": 'btn btn-primary btn-xs' }, 'print'
+            'copy', 'csv', 'excel', 'pdf', 'print'
         ]
  });})},[]);
   return(

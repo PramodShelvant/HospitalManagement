@@ -1,6 +1,8 @@
 .logowrapper,.my{
   transition:.5s
 }
-.dataTables_filter {
-   display: inline-block !important;
+
+input[type=search] {
+   -moz-appearance:none;
+   -webkit-appearance:none;
 }
