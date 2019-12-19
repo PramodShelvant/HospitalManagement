@@ -1,13 +1,16 @@
-import React,{useState} from 'react'
-import Sidebar from './sidebar'
-import PageContent from './maincontent'
-export default (props)=>
-{
-  const sideitems=[
-  
+const sideitems=[
   {
     icon:'fa fa-calendar',
-    name:'My Appointment'
+    name:'My Appointment',
+    submenu:[
+       {
+    icon:'fa fa-stethoscope',
+    name:'OPD'
+  }, {
+    icon:'fa fa-stethoscope',
+    name:'OPD'
+  }
+    ]
   },
    {
     icon:'fa fa-stethoscope',
@@ -45,15 +48,3 @@ export default (props)=>
   }
 
 ];
-  const[hide,setHide]=useState(0)
-  return(
-    <div className="d-sm-flex flex-row">
-    <div className="bg-primary" style={{minHeight:100+'vh'}}>
-   <Sidebar hide={hide} sideitems={sideitems}/>
-    </div>
-    <div className="flex-grow-1">
-    <PageContent hide={hide} setHide={setHide}/>
-    </div>
-    </div>
-  )
-}
