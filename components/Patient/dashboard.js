@@ -12,7 +12,7 @@ return(<React.Fragment>
 <div>
 <Sidebar hide={hide} items={prop.items}/>
 </div>
-<div className='flex-grow-1 m-5'>
+<div className='flex-grow-1 p-5' style={{width:'80%'}}>
 
 <Table />
 </div>

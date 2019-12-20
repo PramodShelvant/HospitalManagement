@@ -21,7 +21,7 @@ export default (prop)=>{
             {
               extend:'copy',
               text:'copy',
-              className:'btn btn-outline-primary  bg-white'
+              className:'btn btn-outline-primary  '
             }, 
             {
               extend:'csv',
