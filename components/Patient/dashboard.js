@@ -9,7 +9,9 @@ export default (prop) =>{
 return(<React.Fragment>
 <Navbar hide={hide} setHide={setHide}/>
 <div className='d-flex'>
+<div>
 <Sidebar hide={hide} items={prop.items}/>
+</div>
 <div className='flex-grow-1 m-5'>
 
 <Table />

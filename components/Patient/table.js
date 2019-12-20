@@ -15,10 +15,37 @@ export default (prop)=>{
                     tableClass: 'table'
                 } )
             }},
-               dom:  '<"d-sm-flex justify-content-between"<B><f>>t',
-        buttons: [
-            'copy', 'csv', 'excel', 'pdf', 'print'
-        ]
+               dom:  '<"d-sm-flex justify-content-between "<f><B>>t',
+        buttons:[
+      
+            {
+              extend:'copy',
+              text:'copy',
+              className:'btn btn-outline-primary  bg-white'
+            }, 
+            {
+              extend:'csv',
+              text:'csv',
+              className:'btn  btn-outline-primary '
+            },
+            {
+              extend:'excel',
+              text:'excel',
+              className:'btn btn-outline-primary '
+            },
+            {
+              extend:'pdf',
+              text:'pdf',
+              className:'btn  btn-outline-primary '
+            },
+            {
+              extend:'print',
+              text:'print',
+              className:'btn btn-outline-primary '
+            },
+
+            
+        ],
  });})},[]);
   return(
 
