@@ -4,7 +4,7 @@ export default (prop)=>{
  useEffect(()=>{  $(document).ready(function () {
             $('#table1').DataTable({
               
-               dom:  '<"col-sm-12"B><"col-sm-12"f>t',
+               dom:  '<"d-flex justify-content-between"<B><f>>t',
         buttons: [
             'copy', 'csv', 'excel', 'pdf', 'print'
         ]
